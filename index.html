@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Solo - Not Alone</title>
+    <meta name="description" content="Travel Solo - Not Alone. Specialized solo travel experiences in remote, pristine locations for self-discovery and authentic adventures. Explore Himalayas, pristine beaches, and embark on life-changing journeys.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2 class="nav__logo">Travel Solo</h2>
+                <p class="nav__tagline">Not Alone</p>
+            </div>
+            
+            <div class="nav__menu" id="navMenu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#destinations" class="nav__link">Destinations</a></li>
+                    <li><a href="#treks" class="nav__link">Trekking Adventures</a></li>
+                    <li><a href="#expeditions" class="nav__link">Mountain Expeditions</a></li>
+                    <li><a href="#seaside" class="nav__link">Seaside Escapes</a></li>
+                    <li><a href="#bike-adventures" class="nav__link">Bike Expeditions</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                
+                <div class="currency-toggle">
+                    <button class="currency-btn active" data-currency="inr">₹ INR</button>
+                    <button class="currency-btn" data-currency="usd">$ USD</button>
+                </div>
+            </div>
+            
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__slideshow">
+            <div class="slide active" data-bg="meghalaya">
+                <div class="slide__content">
+                    <h1>TRAVEL SOLO, NEVER ALONE</h1>
+                    <p>Journey Through Meghalaya's Living Root Bridges with Community Support</p>
+                    <button class="btn btn--primary btn--lg hero-cta" data-target="destinations">Start Your Adventure</button>
+                </div>
+            </div>
+            <div class="slide" data-bg="himachal">
+                <div class="slide__content">
+                    <h1>ADVENTURE SOLO, STAY CONNECTED</h1>
+                    <p>Conquer the Majestic Himalayas with Expert Guidance and Support</p>
+                    <button class="btn btn--primary btn--lg hero-cta" data-target="treks">Explore Mountains</button>
+                </div>
+            </div>
+            <div class="slide" data-bg="thailand">
+                <div class="slide__content">
+                    <h1>ESCAPE SOLO, FEEL SUPPORTED</h1>
+                    <p>Find Peace in Tropical Destinations with Fellow Solo Travelers</p>
+                    <button class="btn btn--primary btn--lg hero-cta" data-target="seaside">Book Seaside Trip</button>
+                </div>
+            </div>
+            <div class="slide" data-bg="everest">
+                <div class="slide__content">
+                    <h1>PUSH LIMITS, NEVER ALONE</h1>
+                    <p>Epic Mountain Expeditions with Community Spirit and Support</p>
+                    <button class="btn btn--primary btn--lg hero-cta" data-target="expeditions">Join Expedition</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero__nav">
+            <button class="hero__nav-btn active" data-slide="0"></button>
+            <button class="hero__nav-btn" data-slide="1"></button>
+            <button class="hero__nav-btn" data-slide="2"></button>
+            <button class="hero__nav-btn" data-slide="3"></button>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="company-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>WHY TRAVEL SOLO?</h2>
+                <p class="intro-lead">We specialize in creating transformative solo travel experiences in remote, pristine locations worldwide. Travel Solo offers carefully curated adventures that help you explore independently while staying connected to a supportive community. Adventure solo but never feel alone.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>8+</h3>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2000+</h3>
+                        <span>Happy Travelers</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <span>Destinations</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <span>Success Rate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Solo Travel Specialists</h3>
+                    <p>8+ years of expertise in creating safe, transformative solo adventures in the world's most stunning destinations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏔️</div>
+                    <h3>Expert Local Guides & 24/7 Support</h3>
+                    <p>Professional guides who know every trail and provide round-the-clock assistance for your peace of mind</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Small Groups (Max 8 People)</h3>
+                    <p>Intimate group sizes ensuring personal attention and meaningful connections with fellow adventurers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safety First - Risk Management</h3>
+                    <p>Comprehensive safety protocols and emergency support systems for worry-free exploration</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Authentic Cultural Immersion</h3>
+                    <p>Connect with local cultures, traditions, and communities for genuine, life-changing encounters</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Flexible Itineraries</h3>
+                    <p>Customizable adventures that adapt to your interests, fitness level, and personal preferences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>EXPLORE AMAZING DESTINATIONS</h2>
+            <p class="section-subtitle">From the mystical mountains of India to tropical paradises, discover your perfect adventure</p>
+            
+            <!-- Mountain Destinations -->
+            <div class="destination-category">
+                <h3>MOUNTAIN DESTINATIONS (INDIA)</h3>
+                <div class="destinations-grid">
+                    <div class="destination-card featured">
+                        <div class="destination-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1754834999/pplx_project_search_images/0f3dc2e9b7964c6feaa5496ba669e0f8a4d8f2ba.png')"></div>
+                        <div class="destination-content">
+                            <h4>Meghalaya</h4>
+                            <p class="tagline">Land of Living Root Bridges</p>
+                            <ul class="highlights">
+                                <li>Living Root Bridges</li>
+                                <li>Cherrapunji Waterfalls</li>
+                                <li>Shillong Hills</li>
+                                <li>Crystal Clear Dawki</li>
+                                <li>Mawlynnong Clean Village</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">5-7 Days</span>
+                                <span class="difficulty easy">Easy to Moderate</span>
+                                <span class="price" data-inr="₹18,000" data-usd="$215">₹18,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Meghalaya</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1755335179/pplx_project_search_images/aae223e761aee101368ce7903c3a94b7963ac96b.png')"></div>
+                        <div class="destination-content">
+                            <h4>Himachal Pradesh</h4>
+                            <p class="tagline">Adventure Capital of India</p>
+                            <ul class="highlights">
+                                <li>Manali Adventure Hub</li>
+                                <li>Dharamshala Spiritual Center</li>
+                                <li>Spiti Cold Desert</li>
+                                <li>Kasol Backpacker Paradise</li>
+                                <li>Kufri Snow Activities</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">5-12 Days</span>
+                                <span class="difficulty varied">Easy to Challenging</span>
+                                <span class="price" data-inr="₹15,000" data-usd="$180">₹15,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Himachal</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image mountain-uttarakhand"></div>
+                        <div class="destination-content">
+                            <h4>Uttarakhand</h4>
+                            <p class="tagline">Spiritual Adventure Hub</p>
+                            <ul class="highlights">
+                                <li>Kedarnath Sacred Trek</li>
+                                <li>Gangotri Glacier Source</li>
+                                <li>Rishikesh Yoga Capital</li>
+                                <li>Valley of Flowers</li>
+                                <li>Nanda Devi Views</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">4-8 Days</span>
+                                <span class="difficulty challenging">Moderate to Challenging</span>
+                                <span class="price" data-inr="₹20,000" data-usd="$240">₹20,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Uttarakhand</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image mountain-kashmir"></div>
+                        <div class="destination-content">
+                            <h4>Jammu & Kashmir</h4>
+                            <p class="tagline">Paradise on Earth</p>
+                            <ul class="highlights">
+                                <li>Ladakh High Desert</li>
+                                <li>Srinagar Dal Lake</li>
+                                <li>Gulmarg Ski Resort</li>
+                                <li>Pahalgam Meadows</li>
+                                <li>Sonamarg Golden Meadow</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">6-10 Days</span>
+                                <span class="difficulty challenging">Moderate to Challenging</span>
+                                <span class="price" data-inr="₹30,000" data-usd="$360">₹30,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Kashmir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seaside Destinations -->
+            <div id="seaside" class="destination-category">
+                <h3>SEASIDE DESTINATIONS</h3>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-image seaside-goa"></div>
+                        <div class="destination-content">
+                            <h4>Goa</h4>
+                            <p class="tagline">Tropical Paradise</p>
+                            <ul class="highlights">
+                                <li>Pristine Beaches</li>
+                                <li>Water Sports Paradise</li>
+                                <li>Portuguese Heritage</li>
+                                <li>Vibrant Nightlife</li>
+                                <li>Spice Plantation Tours</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">4-7 Days</span>
+                                <span class="price" data-inr="₹20,000-50,000" data-usd="$240-600">₹20,000-50,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Goa</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card featured">
+                        <div class="destination-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1756520901/pplx_project_search_images/d5c35ea09f6228a513414fd6e65ce5d47045218e.png')"></div>
+                        <div class="destination-content">
+                            <h4>Thailand</h4>
+                            <p class="tagline">Land of Smiles</p>
+                            <ul class="highlights">
+                                <li>Island Hopping Adventures</li>
+                                <li>Ancient Temple Exploration</li>
+                                <li>Authentic Thai Cuisine</li>
+                                <li>Adventure Water Sports</li>
+                                <li>Cultural Immersion</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">7-10 Days</span>
+                                <span class="price" data-inr="₹45,000-85,000" data-usd="$540-1020">₹45,000-85,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Thailand</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image seaside-bali"></div>
+                        <div class="destination-content">
+                            <h4>Bali</h4>
+                            <p class="tagline">Island of Gods</p>
+                            <ul class="highlights">
+                                <li>Tegallalang Rice Terraces</li>
+                                <li>Ancient Hindu Temples</li>
+                                <li>Volcanic Landscape Treks</li>
+                                <li>Beach Culture Experience</li>
+                                <li>Wellness Retreat Centers</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">6-9 Days</span>
+                                <span class="price" data-inr="₹50,000-90,000" data-usd="$600-1080">₹50,000-90,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Bali</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image seaside-bhutan"></div>
+                        <div class="destination-content">
+                            <h4>Bhutan</h4>
+                            <p class="tagline">Last Shangri-La</p>
+                            <ul class="highlights">
+                                <li>Tiger's Nest Monastery</li>
+                                <li>Himalayan Trekking Routes</li>
+                                <li>Buddhist Culture Deep Dive</li>
+                                <li>Pristine Nature Conservation</li>
+                                <li>Carbon Negative Country</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">5-8 Days</span>
+                                <span class="price" data-inr="₹60,000-100,000" data-usd="$720-1200">₹60,000-100,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Bhutan</button>
+                        </div>
+                    </div>
+                    
+                    <div class="destination-card featured">
+                        <div class="destination-image" style="background-image: url('https://pplx-res.cloudinary.com/image/upload/v1756143959/pplx_project_search_images/804fb0a8c90f68dcb5272e0d9743b22d3e3901d6.png')"></div>
+                        <div class="destination-content">
+                            <h4>Lakshadweep</h4>
+                            <p class="tagline">Coral Paradise</p>
+                            <ul class="highlights">
+                                <li>Pristine Coral Reefs</li>
+                                <li>Crystal Clear Lagoons</li>
+                                <li>Water Sports Adventure</li>
+                                <li>Rich Marine Life</li>
+                                <li>Untouched Island Beauty</li>
+                            </ul>
+                            <div class="destination-info">
+                                <span class="duration">4-6 Days</span>
+                                <span class="price" data-inr="₹35,000-70,000" data-usd="$420-840">₹35,000-70,000</span>
+                            </div>
+                            <button class="btn btn--primary btn--full-width booking-btn">Explore Lakshadweep</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventure Categories -->
+    <section class="adventure-categories">
+        <div class="container">
+            <h2>ADVENTURE CATEGORIES</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image trekking-bg"></div>
+                    <div class="category-content">
+                        <h3>TREKKING ADVENTURES</h3>
+                        <p>Discover the Himalayas through carefully curated trekking experiences</p>
+                        <button class="btn btn--outline category-btn" data-target="treks">Explore Treks</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image expedition-bg"></div>
+                    <div class="category-content">
+                        <h3>MOUNTAIN EXPEDITIONS</h3>
+                        <p>Challenge yourself with world-class mountaineering adventures</p>
+                        <button class="btn btn--outline category-btn" data-target="expeditions">Join Expeditions</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image seaside-bg"></div>
+                    <div class="category-content">
+                        <h3>SEASIDE ESCAPES</h3>
+                        <p>Find peace in tropical paradises and pristine beaches</p>
+                        <button class="btn btn--outline category-btn" data-target="seaside">Discover Beaches</button>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image bike-bg"></div>
+                    <div class="category-content">
+                        <h3>BIKE EXPEDITIONS</h3>
+                        <p>Epic motorcycle journeys through high-altitude passes</p>
+                        <button class="btn btn--outline category-btn" data-target="bike-adventures">Ride Adventures</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trekking Section -->
+    <section id="treks" class="treks">
+        <div class="container">
+            <h2>TREKKING ADVENTURES</h2>
+            <p class="section-subtitle">Discover the magic of the Himalayas with our carefully curated trekking experiences</p>
+            
+            <div class="activities-grid">
+                <div class="activity-card featured">
+                    <div class="activity-header">
+                        <h3>Kedarnath Trek</h3>
+                        <div class="difficulty moderate">Moderate</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">4 Days</span>
+                        <span class="season">May-Jun, Sep-Oct</span>
+                        <span class="price" data-inr="₹22,000" data-usd="$265">₹22,000</span>
+                    </div>
+                    <p>Sacred pilgrimage to one of the most revered Shiva temples in the Himalayas with stunning mountain views</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>Pin Parvati Pass</h3>
+                        <div class="difficulty challenging">Challenging</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">11 Days</span>
+                        <span class="season">Jul-Aug</span>
+                        <span class="price" data-inr="₹45,000" data-usd="$540">₹45,000</span>
+                    </div>
+                    <p>Cross one of the most challenging high-altitude passes in the Indian Himalayas</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>Kinner Kailash Trek</h3>
+                        <div class="difficulty challenging">Challenging</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">8 Days</span>
+                        <span class="season">Jun-Sep</span>
+                        <span class="price" data-inr="₹35,000" data-usd="$420">₹35,000</span>
+                    </div>
+                    <p>Mystical journey to the sacred Kinner Kailash peak in the remote Kinnaur region</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>5 Dham Yatra</h3>
+                        <div class="difficulty moderate">Moderate</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">12 Days</span>
+                        <span class="season">May-Jun, Sep-Oct</span>
+                        <span class="price" data-inr="₹38,000" data-usd="$455">₹38,000</span>
+                    </div>
+                    <p>Complete spiritual journey covering all five sacred temples of Uttarakhand</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+            </div>
+            
+            <div class="text-center mt-32">
+                <button class="btn btn--secondary btn--lg">View All Treks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mountain Expeditions -->
+    <section id="expeditions" class="expeditions">
+        <div class="container">
+            <h2>MOUNTAIN EXPEDITIONS</h2>
+            <p class="section-subtitle">Challenge yourself with world-class mountaineering expeditions and iconic base camp treks</p>
+            
+            <div class="nepal-highlight">
+                <h3>🏔️ Nepal 86 Peaks - Free Exploration Opportunities</h3>
+                <p>Discover Nepal's magnificent 86 peaks above 6,000m with our specialized expedition packages. Contact us for detailed information on free exploration permits and opportunities.</p>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-card featured">
+                    <div class="activity-header">
+                        <h3>Everest Base Camp</h3>
+                        <div class="difficulty challenging">Challenging</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">16 Days</span>
+                        <span class="season">Mar-May, Sep-Nov</span>
+                        <span class="price" data-inr="₹120,000" data-usd="$1,440">₹120,000</span>
+                    </div>
+                    <p>The ultimate trekking adventure to the base of the world's highest peak</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>Annapurna Circuit Trek</h3>
+                        <div class="difficulty moderate">Moderate</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">15 Days</span>
+                        <span class="season">Mar-May, Sep-Nov</span>
+                        <span class="price" data-inr="₹75,000" data-usd="$900">₹75,000</span>
+                    </div>
+                    <p>Classic trek through diverse landscapes and traditional Himalayan villages</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>Kang Yatse Summit</h3>
+                        <div class="difficulty expert">Expert</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">12 Days</span>
+                        <span class="season">Jun-Sep</span>
+                        <span class="price" data-inr="₹85,000" data-usd="$1,020">₹85,000</span>
+                    </div>
+                    <p>Technical climbing adventure in Ladakh's stunning landscape</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>Manaslu Circuit Trek</h3>
+                        <div class="difficulty challenging">Challenging</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">18 Days</span>
+                        <span class="season">Mar-May, Sep-Nov</span>
+                        <span class="price" data-inr="₹90,000" data-usd="$1,080">₹90,000</span>
+                    </div>
+                    <p>Remote and pristine trek around the world's eighth highest mountain</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bike Adventures -->
+    <section id="bike-adventures" class="bike-adventures">
+        <div class="container">
+            <h2>BIKE EXPEDITIONS</h2>
+            <p class="section-subtitle">Experience the thrill of high-altitude motorcycle expeditions through stunning mountain passes</p>
+            
+            <div class="activities-grid">
+                <div class="activity-card featured">
+                    <div class="activity-header">
+                        <h3>Manali to Leh Bike Expedition</h3>
+                        <div class="difficulty challenging">Challenging</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">10 Days</span>
+                        <span class="season">Jun-Sep</span>
+                        <span class="price" data-inr="₹55,000" data-usd="$660">₹55,000</span>
+                    </div>
+                    <p>Legendary motorcycle journey through some of the world's highest motorable passes</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Adventure</button>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="activity-header">
+                        <h3>Spiti Circuit Bike Adventure</h3>
+                        <div class="difficulty moderate">Moderate</div>
+                    </div>
+                    <div class="activity-info">
+                        <span class="duration">8 Days</span>
+                        <span class="season">May-Oct</span>
+                        <span class="price" data-inr="₹45,000" data-usd="$540">₹45,000</span>
+                    </div>
+                    <p>Explore the cold desert of Spiti Valley and ancient monasteries on two wheels</p>
+                    <button class="btn btn--primary btn--full-width booking-btn">Book Adventure</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>WHAT OUR ADVENTURERS SAY</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Meghalaya expedition with Travel Solo was absolutely life-changing! The living root bridges were magical, and I discovered so much about myself during this solo journey while feeling supported by the community."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Priya Sharma</h4>
+                        <span>Mumbai, India</span>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Everest Base Camp trek exceeded all my expectations. The Travel Solo team's expertise and 24/7 support made this challenging journey absolutely unforgettable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>David Chen</h4>
+                        <span>Singapore</span>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Thailand island hopping was the perfect solo adventure! Amazing organization, and I met fellow solo travelers who became lifelong friends. Travel Solo makes you feel never alone."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Sarah Johnson</h4>
+                        <span>Australia</span>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>START YOUR ADVENTURE</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <strong>📧 Email:</strong>
+                        <span>info@travelsolo.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📱 Phone:</strong>
+                        <span>+91 6300522161</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>🌍 WhatsApp:</strong>
+                        <a href="https://wa.me/916300522161" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;">+91 6300522161</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📍 Office:</strong>
+                        <span>Adventure Hub, Hyderabad, Telangana, India</span>
+                    </div>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://facebook.com/travelsolo" target="_blank">📘 Facebook</a>
+                            <a href="https://instagram.com/travelsolo" target="_blank">📷 Instagram</a>
+                            <a href="https://twitter.com/travelsolo" target="_blank">🐦 Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <h3>Plan Your Journey</h3>
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="adventure">Adventure Interest</label>
+                        <select id="adventure" name="adventure" class="form-control" required>
+                            <option value="">Select your interest</option>
+                            <option value="treks">Trekking Adventures</option>
+                            <option value="expeditions">Mountain Expeditions</option>
+                            <option value="bike">Bike Expeditions</option>
+                            <option value="seaside">Seaside Escapes</option>
+                            <option value="mountains">Mountain Destinations</option>
+                            <option value="custom">Custom Adventure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Tell us about your dream adventure</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Describe your ideal adventure, preferred dates, experience level, and any special requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width btn--lg">Get My Adventure Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel Solo</h3>
+                    <p>Not Alone</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/travelsolo" target="_blank">📘 Facebook</a>
+                        <a href="https://instagram.com/travelsolo" target="_blank">📷 Instagram</a>
+                        <a href="https://twitter.com/travelsolo" target="_blank">🐦 Twitter</a>
+                        <a href="https://wa.me/916300522161" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;">💬 WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Adventure Categories</h4>
+                    <ul>
+                        <li><a href="#treks">Trekking Adventures</a></li>
+                        <li><a href="#expeditions">Mountain Expeditions</a></li>
+                        <li><a href="#bike-adventures">Bike Expeditions</a></li>
+                        <li><a href="#destinations">Seaside Escapes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Safety Guidelines</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>24/7 Emergency Support</h4>
+                    <p>Available during all expeditions:</p>
+                    <p><strong>+91 6300522161</strong></p>
+                    <p>Your safety is our priority</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel Solo. All rights reserved. | Made with ❤️ for adventurous souls</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal hidden" id="bookingModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose">&times;</button>
+            <h3>Book Your Adventure</h3>
+            <form id="quickBookingForm">
+                <div class="form-group">
+                    <label class="form-label">Selected Adventure</label>
+                    <input type="text" class="form-control" id="selectedAdventure" readonly>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="bookingName">Full Name</label>
+                    <input type="text" id="bookingName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="bookingEmail">Email</label>
+                    <input type="email" id="bookingEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="bookingPhone">Phone</label>
+                    <input type="tel" id="bookingPhone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="preferredDate">Preferred Start Date</label>
+                    <input type="date" id="preferredDate" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
